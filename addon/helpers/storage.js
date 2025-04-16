@@ -7,8 +7,8 @@ const storage = {};
 function dasherize(str) {
   return str
     .replace(/([a-z\d])([A-Z])/g, '$1-$2') // Add a dash between lowercase and uppercase letters
-    .replace(/[_\s]+/g, '-')              // Replace underscores or spaces with dashes
-    .toLowerCase();                       // Convert the string to lowercase
+    .replace(/[_\s]+/g, '-') // Replace underscores or spaces with dashes
+    .toLowerCase(); // Convert the string to lowercase
 }
 
 function tryStorage(name) {
